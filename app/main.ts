@@ -1,7 +1,5 @@
 import { bootstrap }    from '@angular/platform-browser-dynamic';
 
-import { AppComponent } from './app.component';
+import { HeroTeamBuilderComponent } from './hero-team-builder.component';
 
-bootstrap(AppComponent)
-    .catch((err: any) => console.error(err));
-
+bootstrap(HeroTeamBuilderComponent);
