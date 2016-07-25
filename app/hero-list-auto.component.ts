@@ -30,7 +30,7 @@ import { Heroes } from './hero.service';
             state('in', style({height: '*'})),
             transition('* => void', [
                 style({height: '*'}),
-                animate(250, style({height: 0}))
+                animate(950, style({height: 0}))
             ])
         ])
     ]

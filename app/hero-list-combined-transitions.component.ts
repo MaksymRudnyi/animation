@@ -39,7 +39,7 @@ import { Heroes } from './hero.service';
                 transform: 'scale(1.1)'
             })),
             transition('inactive => active, active => inactive',
-                animate('100ms ease-out'))
+                animate('900ms ease-out'))
         ])
     ]
 })
