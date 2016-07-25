@@ -29,32 +29,32 @@ export class Heroes implements Iterable<Hero> {
 
     currentHeroes: Hero[] = [];
 
-[Symbol.iterator]() {
-    return this.currentHeroes.values();
-}
+    [Symbol.iterator]() {
+        return this.currentHeroes.values();
+    }
 
-canAdd() {
-    return this.currentHeroes.length < ALL_HEROES.length;
-}
+    canAdd() {
+        return this.currentHeroes.length < ALL_HEROES.length;
+    }
 
-canRemove() {
-    return this.currentHeroes.length > 0;
-}
+    canRemove() {
+        return this.currentHeroes.length > 0;
+    }
 
-addActive() {
-    let hero = ALL_HEROES[this.currentHeroes.length];
-    hero.state = 'active';
-    this.currentHeroes.push(hero);
-}
+    addActive() {
+        let hero = ALL_HEROES[this.currentHeroes.length];
+        hero.state = 'active';
+        this.currentHeroes.push(hero);
+    }
 
-addInactive() {
-    let hero = ALL_HEROES[this.currentHeroes.length];
-    hero.state = 'inactive';
-    this.currentHeroes.push(hero);
-}
+    addInactive() {
+        let hero = ALL_HEROES[this.currentHeroes.length];
+        hero.state = 'inactive';
+        this.currentHeroes.push(hero);
+    }
 
-remove() {
-    this.currentHeroes.splice(this.currentHeroes.length - 1, 1);
-}
+    remove() {
+        this.currentHeroes.splice(this.currentHeroes.length - 1, 1);
+    }
 
 }
